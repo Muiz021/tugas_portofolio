@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tampilan | @yield('title')</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    @include('elen-master.template.cssTemplate')
+</head>
+
+<body>
+    <div id="colorlib-page">
+        @include('template.navbar')
+        @yield('template1')
+        <!-- loader -->
+        <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+                <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+                <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
+            </svg></div>
+    </div><!-- END COLORLIB-PAGE -->
+
+    @include('elen-master.template.jsTemplate')
+</body>
+
+</html>
